@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.Set;
 
 public class Component {
     public Component getParent() {
@@ -25,8 +26,8 @@ public class Component {
     }
 
     private Component parent;
-    private ArrayList<Component> children;
-    private LinkedHashMap<String, Double> property;
+    private ArrayList<Component> children = new ArrayList<>();
+    private LinkedHashMap<String, Double> property = new LinkedHashMap<>();
 
     public void setProperty(String s, double d){
         property.put(s, d);
@@ -40,4 +41,7 @@ public class Component {
         return s+": "+property.get(s).toString();
     }
 
+    public Set<String> getKeys(){
+        return property.keySet();
+    }
 }
