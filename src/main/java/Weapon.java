@@ -1,5 +1,5 @@
 public class Weapon extends Component{
-    //damage, range, ammo
+    //damage, range, ammo, hardpoints
     Weapon(double damage, double range, double ammo, double hardpoints){
         this.setProperty("Damage", damage);
         this.setProperty("Range", range);
