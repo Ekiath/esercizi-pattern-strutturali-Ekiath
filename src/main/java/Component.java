@@ -14,13 +14,23 @@ public class Component {
         return children;
     }
 
-    public void setChildren(ArrayList<Component> children) {
-        this.children = children;
+    public Component getChild(int i) {
+        return children.get(i);
+    }
+
+    public void addChild(Component child) {}
+
+    public void removeChild(int i) {
+        this.children.remove(i);
     }
 
     private Component parent;
     private ArrayList<Component> children;
     private LinkedHashMap<String, Double> property;
+
+    public void setProperty(String s, double d){
+        property.put(s, d);
+    }
 
     public Double getProperty(String s) {
         return property.get(s);
