@@ -4,4 +4,4 @@ public class Shield extends Component{
         this.setProperty("Power", power);
         this.setProperty("Thrust", durability);
         this.setProperty("Turn", recharge);
-}
+}}
