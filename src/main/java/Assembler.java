@@ -23,10 +23,8 @@ public class Assembler {
         hull.addChild(lifeSupport);
         lifeSupport.addChild(cargo);
 
-        for (String s: hull.getKeys()) System.out.println(hull.getStringProperty(s));
-
-        for (Component c: hull.getChildren()){
-            for (String s: c.getKeys()) System.out.println(c.getStringProperty(s));
+        Spaceship spaceship = new Spaceship(hull);
+        spaceship.showStatistics();
         }
     }
-}
+

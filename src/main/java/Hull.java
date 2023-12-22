@@ -1,5 +1,5 @@
 public class Hull extends Component{
-    //mass, durability, cargo
+    //mass, durability, volume, hardpoints
     Hull(double mass, double durability, double volume, double hardpoints){
         this.setParent(null);
         this.setProperty("Mass", mass);

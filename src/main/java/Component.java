@@ -26,8 +26,8 @@ public class Component {
     }
 
     private Component parent;
-    private ArrayList<Component> children = new ArrayList<>();
-    private LinkedHashMap<String, Double> property = new LinkedHashMap<>();
+    private final ArrayList<Component> children = new ArrayList<>();
+    private final LinkedHashMap<String, Double> property = new LinkedHashMap<>();
 
     public void setProperty(String s, double d){
         property.put(s, d);
